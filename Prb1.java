@@ -2,7 +2,7 @@
 package com.mycompany.assignment;
 
 
-public class NewClass {
+public class Problem1 {
 
     public static void main(String[] args) {
         
