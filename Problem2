@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Problem2{
+    public static void main(String[] args) {
+        
+     
+        // Input first integer
+        try ( Scanner scanner = new Scanner(System.in)) {
+            // Input first integer
+            System.out.print("Enter the first integer: ");
+            int num1 = scanner.nextInt();
+            
+            // Input second integer
+            System.out.print("Enter the second integer: ");
+            int num2 = scanner.nextInt();
+            
+            
+            // Perform operations
+            int sum = num1 + num2;
+            int subtraction = num1 - num2;
+            int multiplication = num1 * num2;
+            int division = num1 / num2; // For integer division
+            int modulus = num1 % num2;
+            
+            
+            // Output results
+            System.out.println("Sum: " + sum);
+            System.out.println("Subtraction: " + subtraction);
+            System.out.println("Multiplication: " + multiplication);
+            System.out.println("Division: " + division);
+            System.out.println("Modulus: " + modulus);
+            
+            // Close the scanner
+        }
+    }
+}
+
