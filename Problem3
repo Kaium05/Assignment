@@ -1,0 +1,31 @@
+public class Problem3 {
+
+    public static void main(String[] args) {
+        
+        // Enter the year you want to check
+
+       int year = 2024; 
+
+        // A year divisible by 4 is a leap year
+
+        if (year % 4 == 0) {
+         if (year % 100 == 0) {
+
+             //If the is divisible by 100 and 400 then leap year , if only by 100 then not
+
+                if (year % 400 == 0) {
+                    System.out.println(year + " is a leap year.");
+                    
+                } else {
+                    System.out.println(year + " is not a leap year.");
+                    
+                }
+            } else {
+                System.out.println(year + " is a leap year.");
+            }
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+
+}
