@@ -1,0 +1,25 @@
+// Superclass Kaium
+class Kaium {
+    int school = 8000;    // Variable to store school fees
+    int coaching = 3000;  // Variable to store coaching fees
+}
+
+// Subclass Problem6 which extends Kaium
+public class Problem6 extends Kaium {
+    int privateFees = 3000;  // Variable to store private fees
+
+    // Constructor for Problem6
+    public Problem6() {
+        super();  // Call the constructor of the superclass Kaium
+        this.privateFees = 2000;  // Use 'this' keyword to refer to the instance variable privateFees
+    }
+
+    public static void main(String[] args) {
+        Problem6 t = new Problem6();  // Create an instance of the subclass Problem6
+
+        // Accessing and printing the variables from both the superclass and subclass
+        System.out.println("Kaium school fees: " + t.school);
+        System.out.println("Kaium coaching fees: " + t.coaching);
+        System.out.println("Kaium private fees: " + t.privateFees);
+    }
+}
